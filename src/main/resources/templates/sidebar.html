@@ -1,0 +1,27 @@
+<div class="d-flex">
+
+    <div class="bg-white p-3 shadow-sm" style="width: 230px; min-height: 100vh;">
+        <h6 class="text-uppercase text-muted mb-3">Menu</h6>
+
+        <ul class="nav flex-column gap-2">
+            <li class="nav-item">
+                <a th:href="@{/dashboard}" class="nav-link text-dark fw-semibold">
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a th:href="@{/employees}" class="nav-link text-dark fw-semibold">
+                    Employees
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a th:href="@{/employees/add}" class="nav-link text-dark fw-semibold">
+                    Add Employee
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid p-4">

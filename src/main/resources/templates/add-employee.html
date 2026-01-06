@@ -1,0 +1,31 @@
+<div th:replace="header"></div>
+<div th:replace="sidebar"></div>
+
+<h2>Add Employee</h2>
+
+<form th:action="@{/employees/save}" th:object="${employee}" method="post">
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" th:field="*{name}" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Department</label>
+        <input type="text" th:field="*{department}" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Salary</label>
+        <input type="number" th:field="*{salary}" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" th:field="*{email}" class="form-control" required>
+    </div>
+
+    <button class="btn btn-success">Save</button>
+    <a th:href="@{/employees}" class="btn btn-secondary">Back</a>
+</form>
+
+<div th:replace="footer"></div>

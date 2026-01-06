@@ -1,0 +1,18 @@
+<div th:replace="header"></div>
+<div th:replace="sidebar"></div>
+
+<h2>Dashboard</h2>
+<p>Welcome to Employee Management System</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card text-bg-primary">
+            <div class="card-body">
+                <h5>Total Employees</h5>
+                <h3 th:text="${count}">0</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="footer"></div>
